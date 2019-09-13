@@ -8,11 +8,12 @@ print(data)
 print("\nwow this much words: ", muchWords)
 
 
+
 def specialCounter(specialWord, text):
     specialCounter = 0
     for x in text:
-        if x.__contains__(specialWord+"'") or x == specialWord:
-            specialCounter+=1
+        if x.__contains__("'"):
+            x.split("'")
     return specialCounter
 
 specialWord = input()
